@@ -9,8 +9,8 @@ dotenv.config({
 });
 
 app.get("/", (req, res) => {
-  res.send("this is working ");
-  console.log("End point hit on slash ");
+  res.json({message:'This is working fine'});
+ 
 });
 
 connectDB()
