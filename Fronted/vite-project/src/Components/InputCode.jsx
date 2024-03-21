@@ -1,5 +1,6 @@
 import React  ,  {useState} from "react";
 import toast ,{Toaster} from 'react-hot-toast'
+import { Link } from "react-router-dom";
 const InputCode = () => {
   const [formData, setFormData] = useState({
     userName:" ",
@@ -89,9 +90,9 @@ const InputCode = () => {
             <textarea className="border bg-red-200 w-full flex-1 h-3/4" onChange={handleInputChange} name="sourceCode"
           value={formData.sourceCode} placeholder="Enter your code here" required></textarea>
             <div className="flex justify-evenly">
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-Run
-</button>
+            <Link to='/show' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+Show Data
+</Link>
 
 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-full" onClick={handleSubmit}>
   Submit

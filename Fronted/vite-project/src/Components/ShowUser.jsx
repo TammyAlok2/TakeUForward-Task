@@ -1,4 +1,6 @@
+
 import React,{useState,useEffect} from 'react'
+import { Link } from 'react-router-dom';
 
 const ShowUser = () => {
     const [users, setUsers] = useState([]);
@@ -22,7 +24,16 @@ const ShowUser = () => {
   }, []);
 
   return (
+
     <div>
+         <Link to='/' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full m-5 p-5 top-10">
+Back
+</Link>
+         <div className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 animate-pulse">
+    UserData 
+ 
+</div>
+<br/>
           <div className="overflow-x-auto">
       <table className="table-auto w-full border-collapse border border-gray-800">
         <thead>
