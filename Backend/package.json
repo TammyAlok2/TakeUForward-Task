@@ -2,9 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "A backend for striver assignment",
-  "main": "index.js",
+  "main": "loader.cjs",
   "type": "module",
   "scripts": {
+    "type":"module",
     "dev": "nodemon loader.cjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
