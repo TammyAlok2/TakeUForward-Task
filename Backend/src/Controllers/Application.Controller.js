@@ -9,7 +9,7 @@ const submitCode = asyncHandler(async (req,res)=>{
       const {userName, sourceCode , inputCode , codeLanguage,time} = req.body ;
       //console.log(userName,sourceCode, inputCode, codeLanguage,time);
     // checking the data it is valid or not 
-    if([userName,sourceCode,inputCode,codeLanguage].some((field)=>field?.trim === "")){
+    if([userName,sourceCode,inputCode,codeLanguage].some((field)=>field?.trim() === "")){
         throw new ApiError(400,"All fields are required ")
     }
 
