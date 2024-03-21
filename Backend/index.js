@@ -1,7 +1,8 @@
 import express from "express";
-import { app } from "./src/app.js";
+//import { app } from "./src/app.js";
 import cors from 'cors'
 const port = 3000;
+const app = express()
 import dotenv from "dotenv";
 import connectDB from "./src/db/index.js";
 
