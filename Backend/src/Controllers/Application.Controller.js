@@ -7,7 +7,7 @@ import { ApiResponse } from '../Utils/ApiResponse.js';
 const submitCode = asyncHandler(async (req,res)=>{
       // taking data from fronted 
       const {userName, sourceCode , inputCode , codeLanguage,time} = req.body ;
-      console.log(userName,sourceCode, inputCode, codeLanguage,time);
+      //console.log(userName,sourceCode, inputCode, codeLanguage,time);
     // checking the data it is valid or not 
     if([userName,sourceCode,inputCode,codeLanguage].some((field)=>field?.trim === "")){
         throw new ApiError(400,"All fields are required ")
