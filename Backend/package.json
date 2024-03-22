@@ -5,8 +5,7 @@
   "main": "loader.cjs",
   "type": "module",
   "scripts": {
-    "type":"module",
-    "dev": "nodemon loader.cjs",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "alok tamrakar",
