@@ -8,7 +8,7 @@ const ShowUser = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:4000/api/v1/showUser');
+        const response = await fetch('https://takeuforward-task-mxjp.onrender.com/api/v1/showUser');
         const userData = await response.json();
         console.log(userData)
         if (userData.success) {

@@ -23,7 +23,7 @@ const InputCode = () => {
     
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:4000/api/v1/submit', {
+      const response = await fetch('https://takeuforward-task-mxjp.onrender.com/api/v1/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
